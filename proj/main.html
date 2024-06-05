@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML HomePage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      width: 100%;
+      height:auto;
+      font-family: "Poppins",
+      sans-serif;
+    }
+
+    /* CSS for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f5f5f5;
+      height: auto;
+      width: auto;
+      margin: auto;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f5f5f5;
+      margin-right: 20px;
+      color: inherit;
+      text-decoration: none;
+
+    }
+
+    .nav-items a {
+      text-decoration: none;
+
+      padding: 20px 15px;
+      font-size: 25px;
+
+      border-radius: 25px;
+
+      background:
+        linear-gradient(to right,
+          rgb(241, 241, 242),
+          rgb(242, 242, 244)),
+        linear-gradient(to right,
+          rgba(255, 0, 0, 1),
+          rgba(255, 0, 180, 1),
+          rgba(0, 100, 200, 1));
+      background-size: 100% 3px, 0 3px;
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 400ms;
+    }
+
+    .nav-items a:hover {
+      font-weight: bold;
+      color: rgb(28, 135, 154);
+
+      background-size: 0 3px, 100% 3px;
+      
+    }
+
+
+
+
+
+    /* CSS for main element */
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: auto;
+      margin: auto;
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 17px;
+    }
+
+    .intro h1 {
+      font-family: sans-serif;
+      font-size: 45px;
+      color:  #4070f4;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: auto;
+      top: 30px;
+      position: relative;
+    }
+
+    .intro p {
+      font-size: 20px;
+      color: solid blueviolet;
+      text-transform: uppercase;
+      margin: 20px 0;
+      font-weight: 300;
+      top: 50px;
+      position: relative;
+    }
+
+    .lbutton {
+      background-color: #58b08a;
+      color: #e7e5ed;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+      top: 200px;
+      position: relative;
+    }
+    .lbutton:hover{
+      background: #c6836b;
+  background: linear-gradient(top left, #83b0b7 0%, #7b82c1 100%);
+  background: linear-gradient(to bottom right, #e0a6af 0%, #5d6193 100%);
+  border: 20px saddlebrown;
+  color: #052a48;
+
+  border-radius: 10px;
+  
+    }
+
+
+    /* CSS for footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:  #4070f4;
+      padding: auto;
+    }
+
+    .footer .copy {
+      color: #fff;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .bottom-links .links span {
+      font-size: 20px;
+      color: #928b8b;
+
+      margin: 10px 0;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #b1a5a5;
+      padding: 10px 20px;
+    }
+
+    .links a:hover {
+
+      background-color: rgba(32, 222, 229, 0.534);
+
+    }
+
+    .btn {
+      font-family: 'Baloo Bhai', cursive;
+      margin: 0px 9px;
+      background-color:#4070f4;
+      color: white;
+      padding: 4px 14px;
+      border: 2px solid grey;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      
+
+
+    }
+
+    .btn:hover {
+      background: #c6836b;
+  background: linear-gradient(top left, #cb3ae4 0%, #943bd3 100%);
+  background: linear-gradient(to bottom right, #b455e0 0%, #2ee3da 100%);
+  color:  rgb(35, 3, 70);
+      font-weight: bold;
+      
+    }
+
+    .container {
+
+        justify-content: flex-start;
+        width: 100%;
+        text-align: center;
+      }
+    
+  
+    .con{
+      background-color:#4070f4;
+      color: #eadddd;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+     position: relative;
+      top: -55px;
+      margin: 97px;
+
+    }
+
+    .con:hover{
+      background: #c6836b;
+  background: linear-gradient(top left, #cb3ae4 0%, #943bd3 100%);
+  background: linear-gradient(to bottom right, #b455e0 0%, #2ee3da 100%);
+  color:  rgb(35, 3, 70);
+  border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">File Format Converter</a>
+    <nav class="nav-items">
+      <a href="main.html">Home</a>
+      <a href="convert1.html">Convert</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    
+      <a href="signuppage.html"> <button class="btn">Sign up</button></a>
+
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>File Format Converter</h1>
+      <p>Use for covert File in various file..</p>
+      <button class="lbutton">Learn More</button>
+
+      <div class="container">
+       
+        <a href="convert1.html"> <button class="con">Convert</button></a>
+      </div>
+    </div>
+   </main>
+  <footer class="footer">
+    <div class="copy">&copy; 2023 R&V Developer</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="main.html">Home</a>
+    
+        
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

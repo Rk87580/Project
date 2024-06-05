@@ -1,0 +1,19 @@
+
+
+<textarea>
+
+</textarea>
+<button onclick="bt()">Speak</button>
+
+<script>
+
+
+  function bt(){
+  button=document.querySelector("button");
+  text=document.querySelector("textarea");
+  button.addEventListener("click", ()=>{
+  let utterance=new SpeechSynthesisUtterance(text.value);
+  speechSynthesis.speak(utterance);
+  });
+  }
+  </script>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+  * {
+    margin: auto;
+    padding: auto;
+  }
+
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    width: 1520px;
+      height: 500px;
+    margin: auto;
+    background-color: #f5f5f5;
+  
+  bottom: -100%;
+position: relative;
+  
+  }
+
+  .main{
+    top: -500px;
+    margin: 600px;
+    position: relative;
+    right: 90px;
+  
+    
+   
+    width: 1200px;
+    height: auto;
+  }
+  .main :hover{
+        background: #c6836b;
+  background: linear-gradient(top left, #cb3ae4 0%, #943bd3 100%);
+  background: linear-gradient(to bottom right, #b455e0 0%, #2ee3da 100%);
+  color:  rgb(13, 20, 96);
+
+  }
+
+
+
+
+
+  .j1 {
+   width: 40%;
+  height: 78%;
+  margin: 5vh 0vw;
+  padding: 2% 2% 3% 2%;
+  display: flex;
+ 
+  justify-content: baseline;
+  flex-direction: column;
+
+  background-color: #4070f4;
+  color: rgb(241, 233, 233);
+  border: 20px rgb(200, 237, 14);
+  border-radius: 10px;
+  }
+ 
+  .d1 {
+    width: 40%;
+  height: 78%;
+  margin: 5vh 0vw;
+  padding: 2% 2% 3% 2%;
+  display: flex;
+ 
+  justify-content: baseline;
+  flex-direction: column;
+
+  background-color:  #4070f4;
+  color: rgb(241, 233, 233);
+  border: 20px rgb(200, 237, 14);
+  border-radius: 10px;
+  }
+  .h1 {
+    width: 40%;
+  height: 78%;
+  margin: 5vh 0vw;
+  padding: 2% 2% 3% 2%;
+  display: flex;
+ 
+  justify-content: baseline;
+  flex-direction: column;
+  background-color:#4070f4;
+  color: rgb(241, 233, 233);
+  border: 20px rgb(200, 237, 14);
+  border-radius: 10px;
+  }
+  .p1 {
+    width: 40%;
+  height: 78%;
+  margin: 5vh 0vw;
+  padding: 2% 2% 3% 2%;
+  display: flex;
+ 
+  justify-content: baseline;
+  flex-direction: column;
+  background-color: #4070f4;
+  color: rgb(241, 233, 233);
+  border: 20px rgb(200, 237, 14);
+  border-radius: 10px;
+  }
+  .t1 {
+  width: 40%;
+  height: 78%;
+  margin: 5vh 0vw;
+  padding: 2% 2% 3% 2%;
+  display: flex;
+ 
+  justify-content: baseline;
+  flex-direction: column;
+  background-color: #4070f4;
+  color: rgb(241, 233, 233);
+  border: 20px rgb(200, 237, 14);
+  border-radius: 10px;
+  }
+.ts1{
+  width: 40%;
+  height: 78%;
+  margin: 5vh 0vw;
+  padding: 2% 2% 3% 2%;
+  display: flex;
+ 
+  justify-content: baseline;
+  flex-direction: column;
+  background-color: #4070f4;
+  color: rgb(241, 233, 233);
+  border: 20px rgb(200, 237, 14);
+  border-radius: 10px;
+}
+  .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f5f5f5;
+      height: auto;
+      width: auto;
+      margin: auto;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f5f5f5;
+      margin-right: 20px;
+      color: inherit;
+      text-decoration: none;
+
+    }
+
+    .nav-items a {
+      text-decoration: none;
+
+      padding: 20px 15px;
+      font-size: 25px;
+
+      border-radius: 25px;
+
+      background:
+        linear-gradient(to right,
+          rgb(241, 241, 242),
+          rgb(242, 242, 244)),
+        linear-gradient(to right,
+          rgba(255, 0, 0, 1),
+          rgba(255, 0, 180, 1),
+          rgba(0, 100, 200, 1));
+      background-size: 100% 3px, 0 3px;
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 400ms;
+    }
+
+    .nav-items a:hover {
+      font-weight: bold;
+      color: rgb(28, 135, 154);
+
+      background-size: 0 3px, 100% 3px;
+      
+    }
+    .btn {
+      font-family: 'Baloo Bhai', cursive;
+      margin: 0px 9px;
+      background-color:#302f49;
+      color: white;
+      padding: 4px 14px;
+      border: 2px solid grey;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      
+
+
+    }
+
+    .btn:hover {
+      background: #c6836b;
+  background: linear-gradient(top left, #cb3ae4 0%, #943bd3 100%);
+  background: linear-gradient(to bottom right, #b455e0 0%, #2ee3da 100%);
+  color:  rgb(35, 3, 70);
+      font-weight: bold;
+      
+    }
+    .chof{
+      background: #c6836b;
+  background: linear-gradient(top left, #cb3ae4 0%, #943bd3 100%);
+  background: linear-gradient(to bottom right, #b455e0 0%, #2ee3da 100%);
+  color:  rgb(35, 3, 70);
+  border-radius: 10px;
+    }
+  
+
+</style>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">File Format Converter</a>
+    <nav class="nav-items">
+      <a href="main.html">Home</a>
+      <a href="convert1.html">Convert</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      
+      <a href="signuppage.html"> <button class="btn">Sign up</button></a>
+
+    </nav>
+  </header>
+  <div class="main">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="j1">
+
+      <div class="a">
+        <br>
+        <h2>JPG to PNG</h2>
+        <form action="https://v2.convertapi.com/convert/jpg/to/png?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" class="file-input-dropdown__input" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+
+      <div class="a">
+        <br>
+        <h2>JPG to PDF</h2>
+        <form action="https://v2.convertapi.com/convert/jpg/to/pdf?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>JPG to WATERMARK</h2>
+        <form action="https://v2.convertapi.com/convert/jpg/to/watermark?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>JPG to PNG</h2>
+        <form action="https://v2.convertapi.com/convert/jpg/to/png?Secret=GfffpwPVLsFWogsUt&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>PNG TO JPG</h2>
+        <form action="https://v2.convertapi.com/convert/png/to/jpg?Secret=GfffpwPVLsFWogsU&download=attachment" method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download file"/>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="d1">
+      <div class="a">
+        <br>
+        <h2>DOCX TO HTML</h2>
+        <form action="https://v2.convertapi.com/convert/docx/to/html?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>DOCX TO JPG</h2>
+        <form action="https://v2.convertapi.com/convert/docx/to/jpg?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>DOCX TO PDF</h2>
+        <form action="https://v2.convertapi.com/convert/docx/to/pdf?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>DOC TO DOCX</h2>
+        <form action="https://v2.convertapi.com/convert/doc/to/docx?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>DOCX TO TXT</h2>
+        <form action="https://v2.convertapi.com/convert/docx/to/txt?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>DOCX TO XML</h2>
+        <form action="https://v2.convertapi.com/convert/docx/to/xml?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+    </div>
+
+    <div class="h1">
+      <div class="a">
+        <br>
+        <h2>HTML TO DOCX</h2>
+        <form action="https://v2.convertapi.com/convert/html/to/docx?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>HTML TO PDF</h2>
+        <form action="https://v2.convertapi.com/convert/html/to/pdf?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>HTML TO PNG</h2>
+        <form action="https://v2.convertapi.com/convert/html/to/png?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+    </div>
+
+
+    <div class="p1">
+      <div class="a">
+        <br>
+        <h2>PPT TO JPG</h2>
+        <form action="https://v2.convertapi.com/convert/ppt/to/jpg?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>PPT TO PPTX</h2>
+        <form action="https://v2.convertapi.com/convert/ppt/to/pptx?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>PPTX TO PDF</h2>
+        <form action="https://v2.convertapi.com/convert/pptx/to/pdf?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>PPTX TO JPG</h2>
+        <form action="https://v2.convertapi.com/convert/pptx/to/jpg?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>PPTX TO PPT</h2>
+        <form action="https://v2.convertapi.com/convert/pptx/to/ppt?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+    </div>
+
+    <div class="t1">
+      <div class="a">
+        <br>
+        <h2>TXT TO PDF</h2>
+        <form action="https://v2.convertapi.com/convert/txt/to/pdf?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>TXT TO JPG</h2>
+        <form action="https://v2.convertapi.com/convert/txt/to/jpg?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>TXT TO PNG</h2>
+        <form action="https://v2.convertapi.com/convert/txt/to/png?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>ANY TO ZIP</h2>
+        <form action="https://v2.convertapi.com/convert/any/to/zip?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File[0]" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+      <div class="a">
+        <br>
+        <h2>ZIP TO EXTRACT</h2>
+        <form action="https://v2.convertapi.com/convert/zip/to/extract?Secret=GfffpwPVLsFWogsU&download=attachment"
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="File[0]" />
+          <input type="submit" value="Download File" />
+        </form>
+      </div>
+
+    </div>
+
+    <div class="ts1">
+      
+      <div class="a">
+        <br>
+        <h2>TEXT TO VOICE</h2>
+        <textarea>
+
+        </textarea>
+        <button  class="ee"onclick="bt()">Speak</button>
+       
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+  
+
+
+
+</body>
+
+<script>
+
+
+  function bt(){
+  button=document.querySelector(".ee");
+  text=document.querySelector("textarea");
+  button.addEventListener("click", ()=>{
+  let utterance=new SpeechSynthesisUtterance(text.value);
+  speechSynthesis.speak(utterance);
+  });
+  }
+  </script>
+
+
+
+</html>
